@@ -1,3 +1,23 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  --bg: #0d0d0d;
+  --surface: #151515;
+  --surface-light: #2c2c2c;
+  --text-main: #ffffff;
+  --text-secondary: #bfbfbf;
+  --accent: #dcdcdc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(var(--bg), var(--surface-light), var(--text-secondary));
+  color: var(--text-main);
+}
+
+.section {
+  padding: 100px 80px;
+}

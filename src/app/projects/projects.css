@@ -1,0 +1,49 @@
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+}
+
+/*.text {*/
+/*  font-size: 1.2rem;*/
+/*  line-height: 1.8;*/
+/*  color: #bbbbbb;*/
+/*}*/
+
+
+.projects-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.project-img {
+  width: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--surface-light);
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
